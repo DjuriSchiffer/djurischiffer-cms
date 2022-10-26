@@ -7,11 +7,7 @@ const PortfolioItems = {
     useAsTitle: "title",
   },
   access: {
-    read: ({ user }) => {
-      if (user) {
-        return true;
-      }
-    },
+    read: () => true,
   },
   fields: [
     {
