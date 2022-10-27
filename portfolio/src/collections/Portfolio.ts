@@ -1,7 +1,7 @@
 import { CollectionConfig } from 'payload/types';
 
-const Posts: CollectionConfig = {
-  slug: 'posts',
+const Portfolio: CollectionConfig = {
+  slug: 'portfolio',
   admin: {
     defaultColumns: ['title', 'author', 'category', 'tags', 'status'],
     useAsTitle: 'title',
@@ -13,15 +13,6 @@ const Posts: CollectionConfig = {
     {
       name: 'title',
       type: 'text',
-    },
-    {
-      name: 'author',
-      type: 'relationship',
-      relationTo: 'users',
-    },
-    {
-      name: 'publishedDate',
-      type: 'date',
     },
     {
       name: 'category',
@@ -59,4 +50,4 @@ const Posts: CollectionConfig = {
   ],
 }
 
-export default Posts;
+export default Portfolio;
