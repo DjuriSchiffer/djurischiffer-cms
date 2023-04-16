@@ -1,0 +1,23 @@
+/conf
+/logs
+/vendor
+/app/sql
+node_modules
+.idea
+
+!/app/public/
+/app/public/*
+!/public/wp-content/
+/app/public/wp-content/*
+/app/public/wp-admin
+/app/public/wp-includes
+!/app/public/wp-content/languages/
+!/app/public/wp-content/uploads/
+!/app/public/wp-content/themes/
+/app/public/wp-content/themes/*
+
+
+# Don’t ignore
+!/app/public/.htaccess
+!/app/public/wp-content/themes/theme/
+!/app/public/wp-content/wflogs
