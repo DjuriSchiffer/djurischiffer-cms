@@ -1,0 +1,74 @@
+{
+  "name": "djurischiffer/cms",
+  "description": "CMS - djurischiffer.nl",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://satispress.djurischiffer.nl/satispress/"
+    }
+  ],
+  "keywords": ["composer", "satis", "wordpress", "wp"
+  ],
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Djuri Schiffer",
+      "email": "djurischiffer@gmail.com"
+    }
+  ],
+  "prefer-stable": false,
+  "config": {
+    "sort-packages": true,
+    "vendor-dir": "app/public/vendor"
+  },
+  "require": {
+    "php": ">=7.1",
+    "composer/installers": "^1.2",
+    "drupal-composer/preserve-paths": "0.1.*",
+    "johnpbloch/wordpress-core": "6.2",
+    "johnpbloch/wordpress-core-installer": "^1.0",
+    "opis/string": "2.0.1",
+    "pristas-peter/wp-graphql-gutenberg": "dev-master",
+    "psr/http-message": "1.0.1",
+    "react/promise": "2.9.0",
+    "satispress/advanced-custom-fields-component_field": "2.0.2",
+    "satispress/advanced-custom-fields-pro": "6.0.7",
+    "satispress/gravityforms": "2.6.3.2",
+    "vlucas/phpdotenv": "^2.6.1",
+    "wp-graphql/wp-graphql": "dev-master",
+    "wp-graphql/wp-graphql-acf": "dev-master",
+    "wpackagist-plugin/disable-wp-rest-api": "2.3",
+    "wpackagist-plugin/redirection": "5.2.3",
+    "wpackagist-plugin/wordfence": "7.7.1",
+    "wpackagist-plugin/wp-migrate-db": "2.2.2",
+    "wpackagist-plugin/wp-rest-cache": "2022.2.2"
+  },
+  "extra": {
+    "installer-paths": {
+      "app/public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+    },
+    "preserve-paths": [
+      "app/public/.env.example",
+      "app/public/.env",
+      "app/public/vendor",
+      "app/public/environments",
+      "app/public/.htaccess",
+      "app/public/wp-config.php",
+      "app/public/wp-content/uploads",
+      "app/public/wp-content/languages",
+      "app/public/wp-content/themes/theme",
+      "app/public/wp-content/wflogs"
+    ],
+    "wordpress-install-dir": "app/public"
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('app/public/.env.example', 'app/public/.env');\""
+    ]
+  }
+}
