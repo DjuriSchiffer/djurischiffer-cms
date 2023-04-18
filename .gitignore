@@ -1,23 +1,30 @@
-/conf
-/logs
-/vendor
-/app/sql
+conf
+logs
+vendor
+app/sql
 node_modules
 .idea
 
 !/app/public/
 /app/public/*
-!/public/wp-content/
+!/app/public/.env.example
+!/app/public/wp-content/
 /app/public/wp-content/*
-/app/public/wp-admin
-/app/public/wp-includes
 !/app/public/wp-content/languages/
 !/app/public/wp-content/uploads/
 !/app/public/wp-content/themes/
 /app/public/wp-content/themes/*
 
+!/app/public/wp-content/themes/portfolio/assets/css/admin.css
+/app/public/wp-content/themes/portfolio/assets/css/main.min.css.map
+/app/public/wp-content/themes/portfolio/assets/css/main.min.css
+/app/public/wp-content/themes/portfolio/assets/js
+!/app/public/wp-content/themes/portfolio/assets/js/html5shiv.min.js
 
 # Don’t ignore
+!/app/public/.env.example
 !/app/public/.htaccess
-!/app/public/wp-content/themes/theme/
+!/app/public/wp-config.php
+!/app/public/environments
+!/app/public/wp-content/themes/portfolio
 !/app/public/wp-content/wflogs

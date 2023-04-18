@@ -38,6 +38,8 @@
     "react/promise": "2.9.0",
     "satispress/advanced-custom-fields-component_field": "2.0.2",
     "satispress/advanced-custom-fields-pro": "6.0.7",
+    "wpackagist-plugin/classic-editor":"1.6.3",
+    "wpackagist-plugin/disable-gutenberg-blocks":"1.0.9",
     "satispress/gravityforms": "2.6.3.2",
     "vlucas/phpdotenv": "^2.6.1",
     "wp-graphql/wp-graphql": "dev-master",
@@ -61,7 +63,7 @@
       "app/public/wp-config.php",
       "app/public/wp-content/uploads",
       "app/public/wp-content/languages",
-      "app/public/wp-content/themes/theme",
+      "app/public/wp-content/themes/portfolio",
       "app/public/wp-content/wflogs"
     ],
     "wordpress-install-dir": "app/public"
